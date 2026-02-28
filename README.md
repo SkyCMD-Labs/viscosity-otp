@@ -81,7 +81,7 @@ This tool is useful if you:
 ## Documentation
 
 Full instructions, provider-specific guides, troubleshooting, and known limitations are available in the Wiki:
-https://github.com/SkyCMD-Labs/viscosity-otp/wiki
+[Wiki](https://github.com/SkyCMD-Labs/viscosity-otp/wiki)
 
 ## License
 
