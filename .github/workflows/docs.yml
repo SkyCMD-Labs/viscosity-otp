@@ -45,7 +45,6 @@ jobs:
             --max-redirects 10
             --retry-wait-time 2
             --max-retries 3
-            --exclude-mail
             --exclude "^(http://localhost|https://localhost)"
             "**/*.md"
         env:
