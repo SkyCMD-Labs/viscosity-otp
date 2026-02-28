@@ -1,0 +1,31 @@
+name: macOS AppleScript
+
+on:
+  push:
+    paths:
+      - "**.applescript"
+      - ".github/workflows/macos-applescript.yml"
+  pull_request:
+    paths:
+      - "**.applescript"
+      - ".github/workflows/macos-applescript.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  osacompile:
+    name: Compile AppleScript (syntax check)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ensure script exists
+        run: |
+          test -f "BeforeConnect.applescript"
+
+      - name: Compile with osacompile
+        run: |
+          osacompile -o /tmp/BeforeConnect.scpt "BeforeConnect.applescript"
+
