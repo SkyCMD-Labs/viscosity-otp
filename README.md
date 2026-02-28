@@ -1,5 +1,9 @@
 # Viscosity OTP
 
+[![Docs](https://github.com/SkyCMD-Labs/viscosity-otp/actions/workflows/docs.yml/badge.svg?branch=main)](https://github.com/SkyCMD-Labs/viscosity-otp/actions/workflows/docs.yml)
+
+[![macOS AppleScript](https://github.com/SkyCMD-Labs/viscosity-otp/actions/workflows/macos-applescript.yml/badge.svg?branch=main)](https://github.com/SkyCMD-Labs/viscosity-otp/actions/workflows/macos-applescript.yml)
+
 Automatically enters TOTP codes for Viscosity VPN connections on macOS.
 When you connect to a VPN, the OTP is fetched and submitted automatically — no manual copy-paste.
 
